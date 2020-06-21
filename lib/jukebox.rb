@@ -31,7 +31,7 @@ def play(songs)
     song_name=user_response
     puts "Playing #{song_name}"
   elsif user_integer.between?(1,9)
-    song_name=
+    song_name=song[user_integer-1]
     puts "Playing #{song_name}"
   else
     puts "Invalid input, please try again"
