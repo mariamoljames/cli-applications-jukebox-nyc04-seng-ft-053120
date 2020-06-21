@@ -28,7 +28,7 @@ def play(songs)
   user_integer=user_response.to_i
   song_name=
   if songs.include?(user_response) or user_integer.between?(1,9)
-    puts Playing <song name>
+    puts "Playing #{song_name}"
   else
     puts "Invalid input, please try again"
   end
