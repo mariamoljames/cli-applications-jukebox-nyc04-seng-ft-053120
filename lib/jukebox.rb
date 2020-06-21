@@ -47,8 +47,8 @@ def run(songs)
   user_command=gets.strip
   if not user_command.eql?("exit")
     if user_command.eql("help")
+      help
 
     elsif user_command.eql("list")
       list(songs)
     else
-      play(songs)
