@@ -10,7 +10,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-def help
+def display_help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
   puts "- list : displays a list of songs you can play"
@@ -48,7 +48,10 @@ def run(songs)
   if not user_command.eql?("exit")
     if user_command.eql("help")
       help
-
     elsif user_command.eql("list")
       list(songs)
     else
+      play(songs)
+    end
+  end
+  exit_jukebox
